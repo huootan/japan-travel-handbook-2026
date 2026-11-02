@@ -201,7 +201,7 @@
       white-space: nowrap;
     }
 
-    /* Top Sticky Quick-Jump Bar ONLY */
+    /* Top Sticky Collapsible Quick-Jump Bar */
     .sticky-navbar {
       position: sticky;
       top: 0;
@@ -209,24 +209,69 @@
       background: linear-gradient(135deg, #1B365D 0%, #0F2342 100%);
       color: #FFFFFF;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-      padding: 0.5rem 0.9rem;
+      padding: 0.42rem 0.9rem;
       border-bottom: 3px solid var(--primary-gold);
+    }
+
+    .quick-jump-header {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .quick-jump-label {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: #FFD166;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-toggle-nav {
+      background: rgba(255, 209, 102, 0.2);
+      color: #FFD166;
+      border: 1px solid #FFD166;
+      border-radius: 999px;
+      padding: 0.22rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn-toggle-nav:hover {
+      background: #FFD166;
+      color: #102542;
     }
 
     .day-subnav {
       max-width: 1280px;
-      margin: 0 auto;
+      margin: 0.48rem auto 0.15rem;
+      padding-top: 0.45rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
       display: flex;
       flex-wrap: wrap;
       gap: 0.38rem;
       align-items: center;
+      overflow: hidden;
+      transition: max-height 0.25s ease, opacity 0.2s ease, margin 0.2s ease, padding 0.2s ease;
+      max-height: 500px;
+      opacity: 1;
     }
 
-    .quick-jump-label {
-      font-size: 0.85rem;
-      font-weight: 800;
-      color: #FFD166;
-      margin-right: 0.2rem;
+    .day-subnav.collapsed {
+      max-height: 0 !important;
+      opacity: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      border-top-color: transparent !important;
+      pointer-events: none;
     }
 
     .day-pill {
@@ -864,10 +909,13 @@
 </head>
 <body>
 
-  <!-- Top Sticky Quick-Jump Bar ONLY -->
+  <!-- Top Sticky Collapsible Quick-Jump Bar -->
   <header class="sticky-navbar no-print">
-    <nav class="day-subnav" id="day-quick-bar" aria-label="快速跳轉導覽列">
-      <span class="quick-jump-label">⚡ 快速跳轉：</span>
+    <div class="quick-jump-header" onclick="toggleQuickJump()">
+      <span class="quick-jump-label">⚡ 快速跳轉導覽（2026–2027 京阪名旅遊手冊）</span>
+      <button type="button" class="btn-toggle-nav" id="btn-toggle-quickjump" aria-expanded="true">收合選單 ▲</button>
+    </div>
+    <nav class="day-subnav" id="day-quick-bar" aria-label="快速跳轉導覽列" onclick="onQuickJumpItemClick(event)">
       <a href="#section-toc" class="day-pill pill-section">📑 目錄</a>
       <a href="#section-emergency" class="day-pill pill-section">🚨 緊急聯絡人</a>
       <a href="#section-part1" class="day-pill pill-section">🚄 第一部分：行程交通</a>
@@ -3820,6 +3868,24 @@
   <div id="toast-msg" class="no-print">✅ 已複製到剪貼簿！</div>
 
   <script>
+    function toggleQuickJump(forceCollapse) {
+      const bar = document.getElementById('day-quick-bar');
+      const btn = document.getElementById('btn-toggle-quickjump');
+      if (!bar || !btn) return;
+      const shouldCollapse = typeof forceCollapse === 'boolean'
+        ? forceCollapse
+        : !bar.classList.contains('collapsed');
+      bar.classList.toggle('collapsed', shouldCollapse);
+      btn.textContent = shouldCollapse ? '展開選單 ▼' : '收合選單 ▲';
+      btn.setAttribute('aria-expanded', shouldCollapse ? 'false' : 'true');
+    }
+
+    function onQuickJumpItemClick(e) {
+      if (e.target && e.target.closest('a.day-pill')) {
+        setTimeout(() => toggleQuickJump(true), 120);
+      }
+    }
+
     function copyText(txt) {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(txt).then(() => showToast('✅ 已複製：' + txt));

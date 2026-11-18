@@ -1985,18 +1985,176 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 1 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（由西南往東北直線推進）</strong>：今日動線從大阪灣西南側海上的「關西國際機場（人工島）」，搭乘南海電鐵一路沿海岸線往北直達大阪市南區玄關「新今宮／通天閣新世界商圈」；傍晚再由「動物園前站」搭地鐵御堂筋線往北坐 2 站（約 4 分鐘），即可抵達大阪最繁華的「難波・道頓堀・心齋橋商圈」，全天呈南北一直線，完全不繞路！</li>
-<li><strong>🚶 商圈步行方向與相對位置</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>新世界商圈（飯店周邊）</strong>：「東橫INN 大阪通天閣前」就位在新世界東側入口旁，走出飯店往西散步 3 分鐘即達「通天閣本通」與「THE KANKANDO 罐頭堂」。</li>
-<li><strong>難波・道頓堀・心齋橋</strong>：從地鐵「難波站」14 號或 15B 出口上地面後，往北走 3 分鐘就會遇到東西向的「道頓堀運河」與「戎橋（固力果跑跑人看板）」；跨過戎橋繼續往北即為全遮雨棚的「心齋橋筋商店街」，往南回頭則是「Bic Camera 難波店」。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 長輩省力與防迷路關鍵</strong>：新今宮站請認明「<strong>西出口（West Exit）</strong>」搭電梯下至 1 樓平面過馬路；動物園前站進出請走「<strong>2 號或 5 號出口電梯</strong>」，讓第一天剛下飛機的長輩雙腿零負擔。</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 1 當日行程地圖解說（地理方位與街區散步動線圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-1">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 1 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/UwSrugcWvdpaQmsg7" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：關西機場➔東橫INN</a><a href="https://maps.app.goo.gl/wo5y5yQ9u63fV2T36" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：東橫INN➔難波・心齋橋</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-1', 'Day 1 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-1" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <!-- Background Map Canvas -->
+  <rect width="1100" height="660" rx="16" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+
+  <!-- Header Banner -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#0369A1"/>
+  <text x="38" y="47" class="m-title">🧭 Day 1 (12/30) 當日行程地理方位與街區散步解說圖</text>
+  <text x="38" y="71" class="m-sub">【由西南往東北直線推進】① 關西機場(海上人工島) ➔ ② 新今宮・東橫INN ➔ ③ 新世界罐頭堂 ➔ ④ 難波・道頓堀・心齋橋</text>
+
+  <!-- LEFT PANEL: Osaka Bay & KIX to Osaka South Overview Map -->
+  <rect x="20" y="98" width="440" height="485" rx="14" fill="#E0F2FE" stroke="#38BDF8" stroke-width="2"/>
+  <text x="38" y="128" class="z-title" fill="#0369A1">🗺️ 廣域地理方位圖（大阪灣 ➔ 大阪南區）</text>
+
+  <!-- Landmass on Right of Left Panel -->
+  <path d="M 210 140 L 450 140 L 450 575 L 170 575 Q 190 420 215 310 Q 225 220 210 140 Z" fill="#FEFCE8" stroke="#84CC16" stroke-width="2"/>
+  <text x="70" y="290" class="river-lbl">🌊 大阪灣 (Osaka Bay)</text>
+
+  <!-- KIX Island (Bottom Left) -->
+  <rect x="42" y="455" width="135" height="82" rx="12" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="58" cy="472" r="14" fill="#0284C7"/><text x="58" y="472" class="step-num">1</text>
+  <text x="78" y="478" class="p-name">關西國際機場</text>
+  <text x="54" y="500" class="p-desc">第一航廈 (KIX T1)</text>
+  <text x="54" y="519" class="p-desc" fill="#0369A1" font-weight="bold">2F空橋➔南海機場站</text>
+
+  <!-- Bridge & Nankai Rapi:t Track Curve going NE -->
+  <path d="M 177 490 Q 250 480 285 370" fill="none" stroke="#0284C7" stroke-width="6" stroke-dasharray="10,5" marker-end="url(#arrow-blue)"/>
+  <rect x="165" y="405" width="165" height="26" rx="6" fill="#0284C7"/>
+  <text x="174" y="423" class="p-tag">🚆 南海特急 Rapi:t (36分)</text>
+
+  <!-- Shin-Imamiya & Shinsekai Node (Middle East) -->
+  <rect x="235" y="305" width="205" height="82" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+  <circle cx="253" cy="323" r="14" fill="#059669"/><text x="253" y="323" class="step-num">2</text>
+  <text x="273" y="328" class="p-name">新今宮・新世界商圈</text>
+  <text x="247" y="349" class="p-desc">🏨 東橫INN 大阪通天閣前</text>
+  <text x="247" y="368" class="p-desc" fill="#047857" font-weight="bold">🛗 南海西出口電梯平地750m</text>
+
+  <!-- Midosuji Subway North to Namba -->
+  <line x1="335" y1="305" x2="335" y2="235" stroke="#DC2626" stroke-width="6" marker-end="url(#arrow-red)"/>
+  <rect x="250" y="255" width="175" height="25" rx="6" fill="#DC2626"/>
+  <text x="260" y="272" class="p-tag">🚇 御堂筋線往北2站(4分)</text>
+
+  <!-- Namba / Dotonbori / Shinsaibashi Node (Top East) -->
+  <rect x="235" y="150" width="205" height="75" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="253" cy="168" r="14" fill="#DC2626"/><text x="253" y="168" class="step-num">4</text>
+  <text x="273" y="173" class="p-name">難波・道頓堀・心齋橋</text>
+  <text x="247" y="194" class="p-desc">固力果跑跑人・拱廊商店街</text>
+  <text x="247" y="213" class="p-desc" fill="#B91C1C" font-weight="bold">晚餐：神座拉麵/章魚燒/蟹道樂</text>
+
+  <!-- RIGHT PANEL: Zoomed Street Map of Shinsekai & Namba/Dotonbori -->
+  <rect x="475" y="98" width="605" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="495" y="128" class="z-title" fill="#1E293B">🔍 放大街區動線圖（上：難波道頓堀 ／ 下：新世界＆東橫INN）</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(1030,145)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Top Sub-box: Namba / Dotonbori / Shinsaibashi Zoom -->
+  <rect x="492" y="142" width="490" height="210" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+  <text x="506" y="165" class="p-name" fill="#B45309">【傍晚 17:20–21:00】難波 ➔ 道頓堀戎橋 ➔ 心齋橋筋（由南往北步行）</text>
+
+  <!-- Shinsaibashi Arcade (Vertical North) -->
+  <rect x="695" y="175" width="90" height="52" rx="6" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="703" y="197" class="p-name" font-size="14">心齋橋筋</text>
+  <text x="701" y="215" class="p-desc" font-size="12">全遮雨平坦拱廊</text>
+
+  <!-- Dotonbori River (Horizontal Blue Canal) -->
+  <rect x="505" y="232" width="465" height="32" rx="4" fill="#BAE6FD" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="515" y="253" class="river-lbl">🌊 道頓堀川（運河遊步道・河畔設有木椅休息區）</text>
+
+  <!-- Ebisubashi Bridge & Glico -->
+  <rect x="685" y="226" width="110" height="44" rx="8" fill="#DC2626"/>
+  <text x="695" y="245" class="p-tag">📸 戎橋・跑跑人</text>
+  <text x="697" y="262" class="p-tag" fill="#FEF08A">唐吉軻德・蟹道樂</text>
+
+  <!-- Namba Station & Bic Camera (South of Canal) -->
+  <rect x="665" y="295" width="150" height="48" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="678" y="316" class="p-name">🚇 地鐵難波站 (M20)</text>
+  <text x="678" y="334" class="p-desc">14號/15B口・BicCamera</text>
+  <line x1="740" y1="295" x2="740" y2="272" stroke="#DC2626" stroke-width="4" marker-end="url(#arrow-red)"/>
+
+  <!-- Bottom Sub-box: Shin-Imamiya / Hotel / Shinsekai Zoom -->
+  <rect x="492" y="365" width="570" height="202" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="506" y="388" class="p-name" fill="#065F46">【下午 14:15–17:00】南海新今宮站 ➔ 東橫INN ➔ 新世界・罐頭堂（東西向平地）</text>
+
+  <!-- Nankai Shin-Imamiya (West) -->
+  <rect x="508" y="425" width="145" height="75" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="518" y="448" class="p-name">南海新今宮站</text>
+  <text x="518" y="468" class="p-desc" fill="#0369A1" font-weight="bold">★西出口搭電梯下1F</text>
+  <text x="518" y="486" class="p-desc">平地往東走 750m</text>
+
+  <!-- Dobutsuen-mae Station (Center-South) -->
+  <rect x="678" y="495" width="155" height="60" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2"/>
+  <text x="688" y="518" class="p-name">🚇 動物園前站(M22)</text>
+  <text x="688" y="538" class="p-desc" fill="#B91C1C" font-weight="bold">🛗 2號/5號出口有電梯</text>
+
+  <!-- Toyoko Inn Hotel (East) -->
+  <rect x="690" y="405" width="165" height="72" rx="8" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+  <circle cx="705" cy="422" r="12" fill="#059669"/><text x="705" y="422" class="step-num" font-size="14">2</text>
+  <text x="722" y="427" class="p-name">東橫INN 通天閣前</text>
+  <text x="702" y="447" class="p-desc">15:00入住休息</text>
+  <text x="702" y="465" class="p-desc" fill="#047857" font-weight="bold">出門往東即新世界！</text>
+
+  <!-- Shinsekai & Kankando (Far East) -->
+  <rect x="885" y="405" width="162" height="105" rx="8" fill="#FEF2F2" stroke="#E11D48" stroke-width="2.5"/>
+  <circle cx="902" cy="423" r="13" fill="#E11D48"/><text x="902" y="423" class="step-num" font-size="14">3</text>
+  <text x="920" y="428" class="p-name">新世界・通天閣街</text>
+  <text x="897" y="452" class="p-desc" font-weight="bold" fill="#BE123C">🎯 THE KANKANDO</text>
+  <text x="897" y="472" class="p-desc">罐頭堂(估拉估拉棒)</text>
+  <text x="897" y="492" class="p-desc">16:00-17:00 輕鬆逛</text>
+
+  <!-- Arrows in Bottom Sub-box -->
+  <line x1="653" y1="452" x2="686" y2="445" stroke="#059669" stroke-width="4" marker-end="url(#arrow-green)"/>
+  <line x1="855" y1="440" x2="881" y2="440" stroke="#E11D48" stroke-width="4" marker-end="url(#arrow-red)"/>
+  <line x1="765" y1="477" x2="760" y2="492" stroke="#DC2626" stroke-width="3.5" stroke-dasharray="5,3" marker-end="url(#arrow-red)"/>
+
+  <!-- Bottom Senior Tip Bar -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：Day 1 全程由南往北一直線！南海新今宮認明「西出口電梯」、地鐵動物園前站認明「2號/5號口電梯」，道頓堀與心齋橋全平地！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -2388,18 +2546,168 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 2 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（大阪 ➔ 京都東山由北而南順時針環線 ➔ 阿倍野跨年）</strong>：上午從大阪搭乘 JR 新快速往東北方進入京都盆地；抵達京都車站後搭巴士往東北登上東山山腰的「清水寺」。隨後採取<strong>「由高處往低處、由南往北」</strong>順坡散步至祇園「八坂神社」用午餐；下午再從「祇園四條站」搭京阪電車往南至「伏見稻荷大社」，傍晚順著京阪本線一路向西南直返大阪新世界與天王寺「阿倍野 HARUKAS 300 展望台」，形成不走回頭路的黃金順時針環線！</li>
-<li><strong>🚶 京都三大名所空間關係與走法</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>東山古街下坡動線（清水寺 ➔ 八坂神社）</strong>：清水寺位於東山最高處，參拜時請走「仁王門左側無障礙緩坡道」；離開時順著清水坂 ➔ 三年坂 ➔ 二年坂 ➔ 寧寧之道一路往北下坡，腿部最省力。</li>
-<li><strong>祇園四條 ➔ 伏見稻荷大社</strong>：從八坂神社西樓門正對著的「四條通」往西直走即達「祇園四條站」；伏見稻荷大社的「千本鳥居」由西往東上山，<strong>長輩走到「奧社奉拜所」拍完照即可原路折返</strong>，不必爬後段高山。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 跨年夜阿倍野高空省力關鍵</strong>：晚餐後從「動物園前站」搭御堂筋線往南僅 <strong>1 站（2 分鐘）</strong> 即達「天王寺站」，出站地下 1 樓直接搭百貨電梯上 16 樓轉 60 樓天上迴廊，全程室內恆溫、零階梯賞跨年夜景！</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 2 當日行程地圖解說（京都東山順坡古街・伏見稻荷與阿倍野跨年方位圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-2">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 2 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/ftAemyZNVVh3YHDk9" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：東橫INN➔京都清水寺</a><a href="https://maps.app.goo.gl/LSNzhNFAgcvWJxzZ7" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：清水寺➔二三年坂➔八坂神社</a><a href="https://maps.app.goo.gl/cybKN19e1nBQQ6LC9" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航3：祇園四條➔伏見稻荷大社</a><a href="https://maps.app.goo.gl/F8RbTc92n9GDdE7KA" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航4：伏見稻荷➔六鮮通天閣本店</a><a href="https://www.google.com/maps/dir/?api=1&origin=Rokkussen+Tsutenkaku&destination=Abeno+Harukas+300&travelmode=transit" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航5：六鮮➔阿倍野HARUKAS 300展望台</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-2', 'Day 2 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-2" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#FFFBEB" stroke="#D97706" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#92400E"/>
+  <text x="38" y="47" class="m-title">🧭 Day 2 (12/31 跨年夜) 京都東山順坡古街・伏見稻荷與大阪阿倍野地理地圖</text>
+  <text x="38" y="71" class="m-sub">【京都順時針不走回頭路】① 京都站 ➔ ② 清水寺(高處) ➔ ③ 二三年坂順坡往下 ➔ ④ 八坂神社・祇園 ➔ ⑤ 伏見稻荷 ➔ ⑥ 阿倍野300展望台</text>
+
+  <!-- LEFT/CENTER PANEL: Kyoto Basin & Higashiyama Mountain Slope Map -->
+  <rect x="20" y="98" width="685" height="485" rx="14" fill="#FEFCE8" stroke="#F59E0B" stroke-width="2"/>
+  <text x="38" y="128" class="z-title" fill="#92400E">🗺️ 京都盆地與東山古街「由高往低順坡散步」地理方位圖</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(650,145)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Higashiyama Green Hills on Right of Kyoto Panel -->
+  <path d="M 480 140 Q 430 280 460 570 L 695 570 L 695 140 Z" fill="#DCFCE7" stroke="#86EFAC" stroke-width="2"/>
+  <text x="575" y="215" class="p-desc" fill="#166534" font-weight="bold">⛰️ 東山山麓 (地勢較高)</text>
+
+  <!-- Kamo River (North-South Blue River in Kyoto) -->
+  <path d="M 275 140 Q 285 350 265 570" fill="none" stroke="#38BDF8" stroke-width="18"/>
+  <text x="225" y="295" class="river-lbl" transform="rotate(-88,225,295)">🌊 鴨川 (Kamo River)</text>
+
+  <!-- Keihan Main Line Track along Kamo River -->
+  <path d="M 292 150 Q 302 350 282 565" fill="none" stroke="#15803D" stroke-width="4" stroke-dasharray="8,5"/>
+  <text x="302" y="395" class="p-desc" fill="#15803D" font-weight="bold">🚃 京阪本線(沿鴨川東岸南北貫穿)</text>
+
+  <!-- Node 1: Kyoto Station (Center-West) -->
+  <rect x="42" y="345" width="168" height="80" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="60" cy="365" r="14" fill="#0284C7"/><text x="60" y="365" class="step-num">1</text>
+  <text x="80" y="370" class="p-name">JR 京都車站</text>
+  <text x="54" y="392" class="p-desc">0號月台中央口免爬梯</text>
+  <text x="54" y="411" class="p-desc" fill="#0369A1" font-weight="bold">🚌 D2月台搭206公車</text>
+
+  <!-- Bus 206 Arrow from Kyoto St to Kiyomizu-dera -->
+  <path d="M 210 375 Q 345 365 445 315" fill="none" stroke="#16A34A" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <rect x="245" y="325" width="150" height="24" rx="5" fill="#16A34A"/>
+  <text x="253" y="342" class="p-tag">🚌 206巴士至清水道</text>
+
+  <!-- Node 2: Kiyomizu-dera (East High Mountain) -->
+  <rect x="450" y="255" width="235" height="90" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="468" cy="275" r="14" fill="#DC2626"/><text x="468" y="275" class="step-num">2</text>
+  <text x="488" y="280" class="p-name">音羽山 清水寺 (高處)</text>
+  <text x="462" y="302" class="p-desc">10:30-12:00 清水舞台・三重塔</text>
+  <text x="462" y="322" class="p-desc" fill="#047857" font-weight="bold">♿ 走仁王門左側無障礙緩坡道！</text>
+
+  <!-- Node 3: Downhill Walk Sannenzaka -> Ninenzaka -> Nene-no-michi (Going North & Downhill!) -->
+  <path d="M 520 255 Q 490 215 470 195" fill="none" stroke="#D97706" stroke-width="6" stroke-dasharray="8,4" marker-end="url(#arrow-orange)"/>
+  <rect x="315" y="222" width="195" height="62" rx="8" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <circle cx="332" cy="240" r="12" fill="#D97706"/><text x="332" y="240" class="step-num" font-size="14">3</text>
+  <text x="350" y="245" class="p-name" font-size="15">二三年坂・寧寧之道</text>
+  <text x="325" y="264" class="p-desc" fill="#B45309" font-weight="bold">↘ 由南往北「順坡往下走」</text>
+  <text x="325" y="280" class="p-desc">拍八坂之塔・免爬上坡超省力</text>
+
+  <!-- Node 4: Yasaka Shrine & Gion Lunch (North-East) -->
+  <rect x="335" y="135" width="255" height="75" rx="10" fill="#FFFFFF" stroke="#E11D48" stroke-width="3"/>
+  <circle cx="353" cy="153" r="14" fill="#E11D48"/><text x="353" y="153" class="step-num">4</text>
+  <text x="373" y="158" class="p-name">八坂神社・祇園四條 (平地)</text>
+  <text x="347" y="179" class="p-desc">🍜 13:30 午餐：拉麵都 / 松葉鯡魚蕎麥</text>
+  <text x="347" y="198" class="p-desc" fill="#15803D" font-weight="bold">沿四條通往西走至「祇園四條站」</text>
+
+  <!-- Keihan Arrow South from Gion-Shijo to Fushimi Inari -->
+  <path d="M 335 175 L 295 175 L 285 465" fill="none" stroke="#15803D" stroke-width="6" marker-end="url(#arrow-green)"/>
+  <rect x="115" y="445" width="162" height="26" rx="6" fill="#15803D"/>
+  <text x="123" y="463" class="p-tag">🚃 京阪普通/準急往南9分</text>
+
+  <!-- Node 5: Fushimi Inari Taisha (South Kyoto) -->
+  <rect x="305" y="455" width="375" height="108" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="325" cy="477" r="14" fill="#DC2626"/><text x="325" y="477" class="step-num">5</text>
+  <text x="345" y="482" class="p-name">伏見稻荷大社（千本鳥居｜15:10–17:00）</text>
+  <text x="318" y="505" class="p-desc">⛩️ 路線：京阪伏見稻荷站(平面出站) ➔ 樓門・本殿(有電梯) ➔ 千本鳥居雙排隧道</text>
+  <text x="318" y="527" class="p-desc" fill="#B91C1C" font-weight="bold">👵 長輩黃金折返點：走到「奧社奉拜所（約300m緩坡）」拍完照即原路折返！</text>
+  <text x="318" y="548" class="p-desc">（切勿繼續往四辻山頂爬山，省下體力晚上回大阪看跨年夜景）</text>
+
+  <!-- RIGHT PANEL: Return to Osaka Shinsekai & Abeno Harukas 300 NYE -->
+  <rect x="720" y="98" width="360" height="485" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="738" y="128" class="z-title" fill="#1D4ED8">🌃 跨年夜返大阪：新世界 ➔ 阿倍野 300</text>
+
+  <!-- Route from Fushimi Inari to Kitahama -> Ebisucho -->
+  <rect x="740" y="148" width="320" height="72" rx="10" fill="#FFFFFF" stroke="#15803D" stroke-width="2"/>
+  <text x="755" y="172" class="p-name" fill="#15803D">17:00 伏見稻荷 ➔ 大阪北濱 ➔ 惠美須町</text>
+  <text x="755" y="193" class="p-desc">京阪急行往西南返大阪，於北濱轉堺筋線</text>
+  <text x="755" y="211" class="p-desc" fill="#047857" font-weight="bold">🛗 惠美須町站「3號出口」搭大電梯上地面</text>
+
+  <line x1="900" y1="220" x2="900" y2="255" stroke="#059669" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <!-- Dinner Rokkussen + Hotel nearby -->
+  <rect x="740" y="260" width="320" height="105" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="2.5"/>
+  <text x="755" y="285" class="p-name">🍣 18:30–20:00 六鮮 通天閣本店</text>
+  <text x="755" y="307" class="p-desc">位於新世界通天閣本通（近東橫INN飯店）</text>
+  <text x="755" y="327" class="p-desc">享用溫熱茶碗蒸、熟星鰻壽司與海鮮雜炊粥</text>
+  <text x="755" y="348" class="p-desc" fill="#B45309" font-weight="bold">用完餐往南走5分鐘至「動物園前站(M22)」</text>
+
+  <line x1="900" y1="365" x2="900" y2="410" stroke="#DC2626" stroke-width="6" marker-end="url(#arrow-red)"/>
+  <rect x="785" y="374" width="230" height="25" rx="6" fill="#DC2626"/>
+  <text x="795" y="391" class="p-tag">🚇 御堂筋線往南 1 站 (僅2分鐘)</text>
+
+  <!-- Node 6: Abeno Harukas 300 -->
+  <rect x="740" y="415" width="320" height="150" rx="12" fill="#1E1B4B" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="762" cy="440" r="15" fill="#F59E0B"/><text x="762" y="440" class="step-num">6</text>
+  <text x="785" y="446" class="p-name" fill="#FEF08A">阿倍野 HARUKAS 300 展望台</text>
+  <text x="755" y="472" class="p-desc" fill="#E0E7FF">⏰ 20:30–22:00 關西第一高樓跨年夜景</text>
+  <text x="755" y="495" class="p-desc" fill="#38BDF8" font-weight="bold">🛗 天王寺站 B1 電梯直通 16F ➔ 50秒達 60F</text>
+  <text x="755" y="518" class="p-desc" fill="#A7F3D0" font-weight="bold">✨ 360度全玻璃室內恆溫迴廊・有沙發免吹風</text>
+  <text x="755" y="542" class="p-desc" fill="#E2E8F0">回程搭御堂筋線 1 站即回動物園前(東橫INN)</text>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：清水寺走「左側緩坡」、二三年坂「順坡往下走」、伏見稻荷「奧社折返」、跨年夜阿倍野展望台「天王寺站B1全電梯直達」！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -2732,19 +3040,146 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 3 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（大阪跨城往東至名古屋 ➔ 名城線南北環狀動線）</strong>：上午由新大阪搭乘東海道新幹線往東跨越滋賀與岐阜（僅 49 分鐘）直抵中京核心「名古屋車站」，再搭櫻通線往東 3 站入住市中心「久屋大通／榮商圈」的名古屋榮北 APA 飯店。下午完全利用名古屋地鐵唯一的環狀線<strong>「名城線」</strong>：先往北 2 站遊覽「名古屋城」，再搭名城線往南直達「熱田神宮」，傍晚原線北上返回久屋大通與榮商圈，地鐵動線單純直覺！</li>
-<li><strong>🚶 名古屋三大區塊相對位置</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>榮／久屋大通（中心樞紐）</strong>：位於名古屋市正中央，飯店在北側（久屋大通站）、午餐 Denny's 與晚餐百年鰻魚「いば昇」在南側（榮站錦三丁目），步行皆在 5～10 分鐘平地範圍內。</li>
-<li><strong>名古屋城（正北方）</strong>：由「名古屋城站」7 號電梯出口出站即達東門，入城前往「本丸御殿」全平面無階梯。</li>
-<li><strong>熱田神宮（正南方）</strong>：由「熱田神宮西站」2 號電梯出口出站往南走即入西門，森林參道至本宮與草薙館 100% 平坦。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 長輩推大行李轉乘關鍵</strong>：上午推大行李在「久屋大通站」下車時，請走 <strong>1A 出口旁電梯或 Central Park 地下街電梯</strong> 上至地面，再沿平坦人行道走 5 分鐘至 APA 飯店寄放行李。</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 3 當日行程地圖解說（新幹線跨城與名古屋「名城線環狀」南北方位圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-3">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 3 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/ZSrJHjgMKv42iwJq5" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：大阪➔新幹線➔名古屋榮北APA</a><a href="https://maps.app.goo.gl/u4bxEsqv2Nkv3qTy7" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：榮➔名古屋城</a><a href="https://maps.app.goo.gl/7z69pmqRyAcW2EFa9" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航3：名古屋城➔熱田神宮</a><a href="https://maps.app.goo.gl/jXDHH3wZkdMatwto8" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航4：熱田神宮➔名古屋榮北APA</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-3', 'Day 3 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-3" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#F8FAFC" stroke="#1E3A8A" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#1E3A8A"/>
+  <text x="38" y="47" class="m-title">🧭 Day 3 (1/1 元旦) 新幹線跨城至名古屋 ＆ 地鐵「名城線南北環狀」地理地圖</text>
+  <text x="38" y="71" class="m-sub">【以久屋大通/榮為中心樞紐】① 新幹線抵名古屋至APA寄行李 ➔ ② 榮午餐 ➔ ③ 往北2站名古屋城 ➔ ④ 往南熱田神宮 ➔ ⑤ 回榮吃百年鰻魚</text>
+
+  <!-- LEFT PANEL: Osaka to Nagoya Shinkansen Map -->
+  <rect x="20" y="98" width="350" height="485" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+  <text x="36" y="128" class="z-title" fill="#1D4ED8">🚅 上午：跨城新幹線（西 ➔ 東）</text>
+
+  <!-- Osaka Start -->
+  <rect x="40" y="455" width="310" height="95" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="55" y="480" class="p-name">08:00 東橫INN ➔ 動物園前站(M22)</text>
+  <text x="55" y="502" class="p-desc" fill="#B91C1C" font-weight="bold">🛗 請走「2號或5號出口電梯」進站</text>
+  <text x="55" y="523" class="p-desc">搭御堂筋線往北直達「新大阪站」(21分)</text>
+
+  <!-- Arrow Up to Shin-Osaka -->
+  <line x1="195" y1="455" x2="195" y2="385" stroke="#DC2626" stroke-width="5" marker-end="url(#arrow-red)"/>
+
+  <!-- Shin-Osaka to Nagoya Shinkansen Box -->
+  <rect x="40" y="275" width="310" height="105" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <text x="55" y="300" class="p-name" fill="#0369A1">🚅 新大阪站 (26號月台)</text>
+  <text x="55" y="322" class="p-desc" font-weight="bold">東海道新幹線 Nozomi 希望號 (往東49分)</text>
+  <text x="55" y="343" class="p-desc">途經京都 ➔ 直達「JR 名古屋車站」</text>
+  <text x="55" y="364" class="p-desc" fill="#B91C1C" font-weight="bold">⚠️ 元旦期間全車指定席，請對號入座</text>
+
+  <!-- Arrow to Nagoya Sakuradori Line -->
+  <line x1="195" y1="275" x2="195" y2="215" stroke="#0284C7" stroke-width="6" marker-end="url(#arrow-blue)"/>
+
+  <rect x="40" y="145" width="310" height="65" rx="10" fill="#FEF2F2" stroke="#E11D48" stroke-width="2.5"/>
+  <text x="55" y="170" class="p-name">🚇 名古屋站 轉「櫻通線」往東3站</text>
+  <text x="55" y="193" class="p-desc">僅4分鐘即達「久屋大通站(S05)」(APA飯店)</text>
+
+  <!-- RIGHT PANEL: Nagoya Meijo Line Circle Geo Map -->
+  <rect x="385" y="98" width="695" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="405" y="128" class="z-title" fill="#0F172A">🗺️ 名古屋市區「名城線環狀」南北方位圖（上北・下南）</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(1030,148)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Meijo Line Purple Circle Ring -->
+  <ellipse cx="730" cy="355" rx="225" ry="175" fill="none" stroke="#9333EA" stroke-width="10" stroke-dasharray="14,6"/>
+  <text x="865" y="355" class="p-desc" fill="#7E22CE" font-weight="bold">🚇 地鐵名城線(環狀線)</text>
+
+  <!-- NORTH NODE: Nagoya Castle (Top of Circle) -->
+  <rect x="565" y="135" width="330" height="92" rx="12" fill="#FEFCE8" stroke="#CA8A04" stroke-width="3"/>
+  <circle cx="587" cy="157" r="14" fill="#CA8A04"/><text x="587" y="157" class="step-num">3</text>
+  <text x="608" y="162" class="p-name">【正北方】名古屋城・本丸御殿 (13:30–14:30)</text>
+  <text x="578" y="185" class="p-desc">🚇 由榮站搭名城線往北僅 2 站（3分鐘）至「名古屋城站」</text>
+  <text x="578" y="207" class="p-desc" fill="#047857" font-weight="bold">🛗 7號電梯出口直達東門！本丸御殿全平地・設穿脫鞋木椅</text>
+
+  <!-- CENTER HUB: Hisaya-odori (APA Hotel) & Sakae (Lunch & Dinner) -->
+  <rect x="535" y="275" width="390" height="142" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="3.5"/>
+  <circle cx="557" cy="298" r="14" fill="#059669"/><text x="557" y="298" class="step-num">1</text>
+  <text x="578" y="303" class="p-name">【市中心樞紐】久屋大通站 ＆ 榮商圈 (連住3晚核心)</text>
+  <text x="550" y="327" class="p-desc">🏨 <strong>11:00 名古屋榮北 APA 飯店寄行李</strong>（久屋大通站1A/Central Park電梯）</text>
+  <circle cx="557" cy="350" r="12" fill="#D97706"/><text x="557" y="350" class="step-num" font-size="13">2</text>
+  <text x="575" y="355" class="p-desc">🍳 <strong>11:30 午餐：Denny's 東新町店</strong>（蘿蔔泥清燉豆腐漢堡排・歐姆蛋飯）</text>
+  <circle cx="557" cy="378" r="12" fill="#B91C1C"/><text x="557" y="378" class="step-num" font-size="13">5</text>
+  <text x="575" y="383" class="p-desc">🍱 <strong>17:00 晚餐：錦三丁目 百年鰻魚「いば昇」</strong>（元祖高湯鰻魚茶泡飯）</text>
+  <text x="550" y="405" class="p-desc" fill="#047857" font-weight="bold">★飯店、榮商圈、午餐與晚餐皆位於市中心同一個平坦街區內！</text>
+
+  <!-- SOUTH NODE: Atsuta Jingu (Bottom of Circle) -->
+  <rect x="545" y="468" width="370" height="98" rx="12" fill="#FEF2F2" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="567" cy="490" r="14" fill="#DC2626"/><text x="567" y="490" class="step-num">4</text>
+  <text x="588" y="495" class="p-name">【正南方】熱田神宮・草薙館武士刀體驗 (15:30–16:30)</text>
+  <text x="558" y="518" class="p-desc">🚇 由名古屋城站搭名城線(左環)往南直達「熱田神宮西站」(16分)</text>
+  <text x="558" y="538" class="p-desc" fill="#B91C1C" font-weight="bold">🛗 2號電梯口出站往南入西門，森林參道至本宮＆草薙館100%全平地！</text>
+  <text x="558" y="556" class="p-desc">參拜後由熱田神宮西站搭名城線(右環)14分鐘即北上返抵久屋大通</text>
+
+  <!-- Directional Arrows between Center, North, South -->
+  <path d="M 730 275 L 730 232" fill="none" stroke="#059669" stroke-width="5" marker-end="url(#arrow-green)"/>
+  <path d="M 565 190 Q 475 330 545 505" fill="none" stroke="#DC2626" stroke-width="5" marker-end="url(#arrow-red)"/>
+  <rect x="412" y="335" width="118" height="44" rx="6" fill="#DC2626"/>
+  <text x="420" y="354" class="p-tag">名城線左環往南</text>
+  <text x="420" y="371" class="p-tag">(8站・16分鐘)</text>
+
+  <path d="M 915 505 Q 985 380 925 345" fill="none" stroke="#0284C7" stroke-width="5" marker-end="url(#arrow-blue)"/>
+  <rect x="945" y="410" width="122" height="44" rx="6" fill="#0284C7"/>
+  <text x="953" y="429" class="p-tag">名城線右環北上</text>
+  <text x="953" y="446" class="p-tag">回飯店(14分鐘)</text>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：名古屋市區只要記住「久屋大通/榮在中間、名古屋城在正北、熱田神宮在正南」，一條名城線環狀串聯全平地景點！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -3022,18 +3457,165 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 4 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（名古屋平原往北深入岐阜飛驒山脈・專車點對點直達）</strong>：今日由名古屋車站「太閤通口（西口新幹線側）」集合出發，搭乘 KKday 景觀巴士沿「東海北陸自動車道」一路向北深入岐阜縣飛驒高地。中午先抵達海拔約 570 公尺的「飛驒高山古街」，下午再往西北方穿越白山山麓長隧道抵達世界遺產「白川鄉荻町合掌造聚落」，傍晚原車南下直返名古屋車站 ESCA 地下街用晚餐。</li>
-<li><strong>🚶 兩大景區內部地圖方位與走法</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>飛驒高山古街（上三之町）</strong>：古街呈南北走向，位於「宮川」東岸與朱紅「中橋」北側；午餐名店「味之與平（舩坂酒造店）」就在上三之町正中央，全區為 100% 平坦柏油與石板街道。</li>
-<li><strong>白川鄉荻町合掌村</strong>：專車停靠於庄川西岸的「せせらぎ公園停車場」，全團走過平坦壯觀的「相逢橋（であい橋）」即進入東岸的合掌造村落主幹道（本通），一路平地散步至「神田家」圍爐喝熱茶。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 長輩雪地保暖與省力關鍵</strong>：本團特別選擇「不去陡滑城山展望台」的平地漫遊方案，長輩完全不必在雪地爬坡！在名古屋站下車轉去集合點時，請認明「<strong>太閤通口（銀色時鐘廣場側）</strong>」走出車站過馬路即達 Ministop 椿町店。</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 4 當日行程地圖解說（飛驒高山古街＆白川鄉合掌村平面街區動線圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-4">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 4 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/U8VM4tSNQ8wWX6Tc8" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：名古屋榮北APA➔名古屋站Ministop集合點</a><a href="https://maps.app.goo.gl/QKtR1UVCmnPEGD4D6" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：名古屋站➔名古屋榮北APA</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-4', 'Day 4 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-4" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#F0FDF4" stroke="#15803D" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#166534"/>
+  <text x="38" y="47" class="m-title">🧭 Day 4 (1/2) 飛驒高山古街（上三之町）＆ 白川鄉合掌村地理方位與街區地圖</text>
+  <text x="38" y="71" class="m-sub">【專車直達免轉車・全平地漫步】① 名古屋站太閤通口集合 ➔ ② 北上飛驒高山古街(A5飛驒牛) ➔ ③ 白川鄉荻町合掌村 ➔ ④ 返名古屋站ESCA</text>
+
+  <!-- LEFT PANEL: Central Japan Highway Map (Nagoya -> Takayama -> Shirakawa-go) -->
+  <rect x="20" y="98" width="355" height="485" rx="14" fill="#ECFDF5" stroke="#34D399" stroke-width="2"/>
+  <text x="36" y="128" class="z-title" fill="#065F46">🚌 廣域北上路線（東海北陸道）</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(325,148)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Node 3 Top: Shirakawa-go -->
+  <rect x="42" y="148" width="235" height="82" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="60" cy="168" r="14" fill="#0284C7"/><text x="60" y="168" class="step-num">3</text>
+  <text x="80" y="173" class="p-name">白川鄉合掌村 (最北端)</text>
+  <text x="54" y="195" class="p-desc">14:30–16:00 世界文化遺產</text>
+  <text x="54" y="214" class="p-desc" fill="#0369A1" font-weight="bold">❄️ 過相逢橋逛平坦童話雪村</text>
+
+  <!-- Node 2 Middle: Hida Takayama -->
+  <rect x="42" y="295" width="255" height="82" rx="10" fill="#FFFFFF" stroke="#D97706" stroke-width="3"/>
+  <circle cx="60" cy="315" r="14" fill="#D97706"/><text x="60" y="315" class="step-num">2</text>
+  <text x="80" y="320" class="p-name">飛驒高山古街 (岐阜飛驒)</text>
+  <text x="54" y="342" class="p-desc">11:30–13:30 上三之町・中橋</text>
+  <text x="54" y="361" class="p-desc" fill="#B45309" font-weight="bold">🥩 午餐：味之與平 A5飛驒牛</text>
+
+  <!-- Node 1 & 4 Bottom: JR Nagoya Station -->
+  <rect x="42" y="455" width="295" height="108" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="60" cy="477" r="14" fill="#DC2626"/><text x="60" y="477" class="step-num">1</text>
+  <text x="80" y="482" class="p-name">JR 名古屋站 (太閤通口/西側)</text>
+  <text x="54" y="504" class="p-desc" font-weight="bold" fill="#B91C1C">⏰ 08:45 集合：Ministop 名駅椿町店</text>
+  <text x="54" y="525" class="p-desc">（出太閤通口銀色時鐘廣場過馬路即達）</text>
+  <text x="54" y="546" class="p-desc" fill="#047857" font-weight="bold">④ 19:00 返抵名古屋站直通 ESCA 吃矢場豬排</text>
+
+  <!-- Highway Arrows -->
+  <path d="M 140 455 L 140 382" fill="none" stroke="#D97706" stroke-width="6" marker-end="url(#arrow-orange)"/>
+  <text x="52" y="425" class="p-desc" font-weight="bold" fill="#B45309">專車北上2.5hr</text>
+  <path d="M 140 295 L 140 235" fill="none" stroke="#0284C7" stroke-width="6" marker-end="url(#arrow-blue)"/>
+  <text x="52" y="270" class="p-desc" font-weight="bold" fill="#0369A1">穿越山嶺1hr</text>
+  <path d="M 277 190 Q 355 330 295 450" fill="none" stroke="#059669" stroke-width="5" stroke-dasharray="8,4" marker-end="url(#arrow-green)"/>
+  <text x="278" y="415" class="p-desc" font-weight="bold" fill="#047857">16:00原車直返</text>
+
+  <!-- RIGHT PANEL: Two Detailed Village Maps (Top: Takayama / Bottom: Shirakawa-go) -->
+  <rect x="390" y="98" width="690" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Top Right Sub-Map: Hida Takayama Old Town -->
+  <rect x="408" y="114" width="654" height="222" rx="12" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+  <text x="425" y="140" class="z-title" fill="#92400E">🏮 【11:30–13:30】飛驒高山古街（上三之町）平面街區圖（100% 平地無階梯）</text>
+
+  <!-- Miyagawa River (North-South in Takayama) -->
+  <rect x="525" y="152" width="38" height="172" fill="#BAE6FD" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="538" y="255" class="river-lbl" transform="rotate(-90,538,255)">宮川 (Miyagawa)</text>
+
+  <!-- Nakabashi Red Bridge -->
+  <rect x="505" y="255" width="78" height="32" rx="6" fill="#DC2626"/>
+  <text x="515" y="276" class="p-tag">📸 朱紅中橋</text>
+
+  <!-- Kami-Sannomachi Street (East of Miyagawa) -->
+  <rect x="615" y="155" width="425" height="165" rx="10" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="632" y="182" class="p-name" fill="#92400E">🛣️ 上三之町古街（南北向平坦石板街・江戶黑木町家）</text>
+
+  <rect x="632" y="198" width="195" height="105" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="645" y="222" class="p-name" fill="#B91C1C">🥩 午餐：味之與平</text>
+  <text x="645" y="244" class="p-desc">位於百年「舩坂酒造店」內</text>
+  <text x="645" y="264" class="p-desc" font-weight="bold" fill="#047857">👵 A5飛驒牛清酒高湯涮涮鍋</text>
+  <text x="645" y="284" class="p-desc">室內暖氣桌椅・附無障礙廁所</text>
+
+  <rect x="842" y="198" width="182" height="105" rx="8" fill="#FFFFFF" stroke="#D97706" stroke-width="2"/>
+  <text x="855" y="222" class="p-name">🍶 杉玉酒藏＆飛驒娃娃</text>
+  <text x="855" y="244" class="p-desc">備案：壽々や / 丸明飛驒牛</text>
+  <text x="855" y="264" class="p-desc">用完餐沿平坦古街往南走</text>
+  <text x="855" y="284" class="p-desc">至朱紅「中橋」拍雪景合照</text>
+
+  <!-- Bottom Right Sub-Map: Shirakawa-go Ogimachi Village -->
+  <rect x="408" y="348" width="654" height="222" rx="12" fill="#F0F9FF" stroke="#0284C7" stroke-width="2"/>
+  <text x="425" y="374" class="z-title" fill="#0369A1">❄️ 【14:30–16:00】白川鄉荻町合掌村平面動線圖（專車不去陡滑展望台・全村平地！）</text>
+
+  <!-- Parking & Bus Center (West of Shogawa River) -->
+  <rect x="424" y="405" width="145" height="135" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="435" y="432" class="p-name">🚌 せせらぎ停車場</text>
+  <text x="435" y="454" class="p-desc">專車上下車點</text>
+  <text x="435" y="476" class="p-desc" fill="#047857" font-weight="bold">🔥 綜合案內所(であいの館)</text>
+  <text x="435" y="496" class="p-desc">設強效暖氣休息室</text>
+  <text x="435" y="516" class="p-desc">＆大型無障礙洗手間</text>
+
+  <!-- Shogawa River & Deai Bridge -->
+  <rect x="585" y="388" width="42" height="168" fill="#BAE6FD" stroke="#0284C7" stroke-width="1.5"/>
+  <text x="600" y="520" class="river-lbl" transform="rotate(-90,600,520)">庄川 (Shogawa)</text>
+
+  <rect x="562" y="445" width="88" height="36" rx="6" fill="#059669"/>
+  <text x="570" y="468" class="p-tag">🌉 相逢橋(平地)</text>
+
+  <!-- Ogimachi Village (East of Shogawa River) -->
+  <rect x="665" y="392" width="380" height="162" rx="10" fill="#FFFFFF" stroke="#15803D" stroke-width="2.5"/>
+  <text x="682" y="418" class="p-name" fill="#166534">🏡 荻町合掌造聚落本通（平坦主幹道・設自動融雪噴水）</text>
+  <text x="682" y="444" class="p-desc">• <strong>代表名宅「神田家」</strong>：過相逢橋往村中心走5分鐘，1樓免爬梯圍著<strong>炭火地爐</strong>喝熱野草茶取暖！</text>
+  <text x="682" y="470" class="p-desc">• <strong>重要文化財「和田家」＆「明善寺鐘樓門」</strong>：沿平坦本通欣賞三百年雙手合十茅草屋與水田雪景。</text>
+  <text x="682" y="498" class="p-desc" fill="#B91C1C" font-weight="bold">★長輩友善優勢：全團在平坦村莊內深度漫步1.5小時，完全免爬結冰陡坡！</text>
+  <text x="682" y="524" class="p-desc" fill="#0369A1" font-weight="bold">⏰ 15:50 走回相逢橋西岸停車場上車，溫暖睡覺回名古屋站吃矢場腰內肉豬排！</text>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：高山古街在宮川東岸、合掌村過相逢橋即達，兩處皆為 100% 平地！冷了就進「舩坂酒造」或「神田家地爐／案內所」吹暖氣！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -3293,18 +3875,180 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 5 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（沿名古屋中央「大津通」南北軸線慢活漫遊）</strong>：名古屋最繁華的商業軸線就是貫穿南北的「<strong>大津通（Otsu-dori）</strong>」。我們的 APA 飯店位於大津通北段（丸之內／久屋大通），上午直接從飯店旁 96 公尺的大津通站牌搭低底盤公車往南直達南段的「大須觀音與大須商店街」；中午搭地鐵回飯店午休放戰利品後，下午就在飯店東南側的「榮商圈核心區」悠閒漫步，動線最短、節奏最輕鬆！</li>
-<li><strong>🚶 大須與榮商圈地圖結構解析</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>大須商圈（西往東走向）</strong>：「大須觀音」位於商圈最西側（本堂左側有專用電梯），參拜後順著「仁王門通／萬松寺通」全遮雨拱廊一路往東邊走邊逛，途中經過「Konparu 大須本店」吃三明治午餐，走到最東端正好就是地鐵「上前津站」！</li>
-<li><strong>榮商圈（北往南走向）</strong>：北側是「久屋大通公園、中部電力 MIRAI TOWER 與綠洲 21（水之宇宙船）」，往南沿大津通依序為「唐吉訶德榮本店、Yodobashi（Sunshine Sakae）」與南側的「松坂屋名古屋店、PARCO」。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 長輩免排隊罰站黃金秘訣</strong>：晚餐「熱田蓬萊軒」位於<strong>松坂屋南館 10 樓</strong>，下午逛到松坂屋時請先搭電梯上 10 樓登記候位領取入場時間單，長輩即可在百貨公司沙發區舒服休息，時間到再進場享用國寶鰻魚三吃！</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 5 當日行程地圖解說（大須觀音商店街「西往東」＆榮商圈「北往南」街區圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-5">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 5 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/2vND62M3fq1BhM1F7" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：大津通公車➔大須觀音</a><a href="https://maps.app.goo.gl/cDasu5QwaY35rJNV6" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：大須➔名古屋榮北APA</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-5', 'Day 5 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-5" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#FFFBEB" stroke="#D97706" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#B45309"/>
+  <text x="38" y="47" class="m-title">🧭 Day 5 (1/3) 名古屋南北中軸線「大津通」：大須觀音商店街 ＆ 榮商圈地理地圖</text>
+  <text x="38" y="71" class="m-sub">【沿大津通南北軸線慢活漫遊】① 飯店旁大津通搭低底盤公車往南 ➔ ② 大須觀音(西往東逛拱廊＆Konparu) ➔ ③ 榮商圈(綠洲21➔松坂屋蓬萊軒)</text>
+
+  <!-- LEFT PANEL: Otsu-dori North-South Spine Map -->
+  <rect x="20" y="98" width="445" height="485" rx="14" fill="#FEFCE8" stroke="#F59E0B" stroke-width="2"/>
+  <text x="38" y="128" class="z-title" fill="#92400E">🗺️ 名古屋中軸「大津通」南北方位圖</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(412,148)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Otsu-dori Vertical Avenue Road -->
+  <rect x="195" y="145" width="52" height="420" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2"/>
+  <text x="225" y="385" class="road-lbl" transform="rotate(-90,225,385)">🛣️ 大津通 (Otsu-dori 南北中央大道)</text>
+
+  <!-- North Node 1: APA Hotel & Otsu-dori Bus Stop -->
+  <rect x="38" y="148" width="315" height="82" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+  <circle cx="58" cy="168" r="14" fill="#059669"/><text x="58" y="168" class="step-num">1</text>
+  <text x="78" y="173" class="p-name">【北段】名古屋榮北 APA 飯店</text>
+  <text x="50" y="195" class="p-desc">08:30 出飯店走 96公尺(2分鐘)即達「大津通」站牌</text>
+  <text x="50" y="214" class="p-desc" fill="#047857" font-weight="bold">🚌 搭名鐵巴士30號低底盤公車往南(免爬地鐵樓梯！)</text>
+
+  <!-- Bus Arrow South -->
+  <path d="M 160 230 L 160 465" fill="none" stroke="#059669" stroke-width="6" marker-end="url(#arrow-green)"/>
+  <rect x="42" y="340" width="142" height="44" rx="6" fill="#059669"/>
+  <text x="50" y="359" class="p-tag">🚌 低底盤公車往南</text>
+  <text x="50" y="376" class="p-tag">4站13分抵白川公園</text>
+
+  <!-- Middle Node 3: Sakae Shopping District -->
+  <rect x="248" y="255" width="202" height="190" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="268" cy="277" r="14" fill="#0284C7"/><text x="268" y="277" class="step-num">3</text>
+  <text x="288" y="282" class="p-name">【中段】榮商圈</text>
+  <text x="258" y="305" class="p-desc">13:30–20:00 深度漫遊：</text>
+  <text x="258" y="326" class="p-desc">• 北：綠洲21・電視塔</text>
+  <text x="258" y="346" class="p-desc">• 中：唐吉訶德・Yodobashi</text>
+  <text x="258" y="366" class="p-desc">• 南：松坂屋・PARCO</text>
+  <text x="258" y="390" class="p-desc" fill="#B91C1C" font-weight="bold">🍱 18:00 松坂屋南館10F</text>
+  <text x="258" y="410" class="p-desc" fill="#B91C1C" font-weight="bold">「熱田蓬萊軒」鰻魚三吃</text>
+
+  <!-- South Node 2: Osu Kannon & Osu Shopping Arcade -->
+  <rect x="38" y="472" width="412" height="96" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="3"/>
+  <circle cx="58" cy="494" r="14" fill="#DC2626"/><text x="58" y="494" class="step-num">2</text>
+  <text x="78" y="499" class="p-name">【南段】大須觀音 ＆ 大須商店街 (09:00–12:30)</text>
+  <text x="50" y="522" class="p-desc">於「白川公園前」下車平地走5分鐘即達大須觀音</text>
+  <text x="50" y="542" class="p-desc" fill="#B45309" font-weight="bold">🥪 11:00 午餐：Konparu 大須本店（去邊軟吐司厚蛋＆炸蝦三明治）</text>
+  <text x="50" y="560" class="p-desc">12:30 從最東側「上前津站」搭名城線3站(6分)回飯店午休放戰利品</text>
+
+  <!-- RIGHT PANEL: Zoomed Street Maps of Osu (West->East) & Sakae (North->South) -->
+  <rect x="480" y="98" width="600" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- Top Right: Osu Shopping District West-to-East Map -->
+  <rect x="498" y="114" width="564" height="215" rx="12" fill="#FEF2F2" stroke="#F87171" stroke-width="2"/>
+  <text x="515" y="140" class="z-title" fill="#B91C1C">🏮 上午：大須商圈「由西往東一條龍」拱廊地圖（全遮雨棚平地）</text>
+
+  <!-- West: Osu Kannon -->
+  <rect x="514" y="165" width="155" height="135" rx="10" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="526" y="190" class="p-name" fill="#B91C1C">【西側起點】</text>
+  <text x="526" y="212" class="p-name">⛩️ 大須觀音</text>
+  <text x="526" y="236" class="p-desc">廣場餵白鴿・拍大提燈</text>
+  <text x="526" y="258" class="p-desc" fill="#047857" font-weight="bold">🛗 本堂左側設無障礙</text>
+  <text x="526" y="276" class="p-desc" fill="#047857" font-weight="bold">專用電梯直上本堂！</text>
+
+  <line x1="669" y1="232" x2="702" y2="232" stroke="#DC2626" stroke-width="5" marker-end="url(#arrow-red)"/>
+
+  <!-- Middle: Covered Arcade & Konparu -->
+  <rect x="706" y="165" width="185" height="135" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2.5"/>
+  <text x="718" y="190" class="p-name" fill="#B45309">【中段拱廊】仁王門通/萬松寺通</text>
+  <text x="718" y="214" class="p-name">🥪 Konparu 大須本店</text>
+  <text x="718" y="236" class="p-desc">昭和復古紅絲絨沙發卡座</text>
+  <text x="718" y="258" class="p-desc" font-weight="bold" fill="#047857">👵 必點：溫熱厚蛋軟三明治</text>
+  <text x="718" y="276" class="p-desc">＆招牌炸蝦三明治(切6小塊)</text>
+
+  <line x1="891" y1="232" x2="922" y2="232" stroke="#059669" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <!-- East: Kamimaezu Station -->
+  <rect x="926" y="165" width="122" height="135" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="2.5"/>
+  <text x="936" y="190" class="p-name" fill="#065F46">【東側終點】</text>
+  <text x="936" y="214" class="p-name">🚇 上前津站</text>
+  <text x="936" y="238" class="p-desc">逛完萬松寺即達</text>
+  <text x="936" y="260" class="p-desc" font-weight="bold" fill="#047857">搭名城線3站</text>
+  <text x="936" y="278" class="p-desc">回飯店午休30分</text>
+
+  <!-- Bottom Right: Sakae District North-to-South Map -->
+  <rect x="498" y="342" width="564" height="226" rx="12" fill="#F0F9FF" stroke="#38BDF8" stroke-width="2"/>
+  <text x="515" y="368" class="z-title" fill="#0369A1">🛸 下午＆晚餐：榮商圈「北 ➔ 南」地標配置與蓬萊軒免排隊秘訣</text>
+
+  <!-- Box A: Oasis 21 & TV Tower (North Sakae) -->
+  <rect x="514" y="385" width="168" height="165" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="526" y="410" class="p-name" fill="#0369A1">【榮北側】綠洲 21</text>
+  <text x="526" y="432" class="p-desc">🛸 水之宇宙船玻璃屋頂</text>
+  <text x="526" y="452" class="p-desc">🗼 中部電力電視塔</text>
+  <text x="526" y="476" class="p-desc" fill="#047857" font-weight="bold">🛗 設大型透明景觀電梯</text>
+  <text x="526" y="496" class="p-desc">直達頂樓空中步道拍鐵塔</text>
+  <text x="526" y="518" class="p-desc">零階梯・地下銀河廣場溫暖</text>
+
+  <!-- Box B: Don Quijote & Yodobashi (Center Sakae) -->
+  <rect x="696" y="385" width="165" height="165" rx="10" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+  <text x="708" y="410" class="p-name">【榮中段】錦三丁目</text>
+  <text x="708" y="434" class="p-desc">🛍️ 唐吉訶德 榮本店</text>
+  <text x="708" y="456" class="p-desc">📷 Yodobashi Camera</text>
+  <text x="708" y="476" class="p-desc">(Sunshine Sakae摩天輪)</text>
+  <text x="708" y="502" class="p-desc" fill="#0369A1" font-weight="bold">💡 戶外若風涼可走地下街</text>
+  <text x="708" y="522" class="p-desc">Sakaechika 全平地連通</text>
+
+  <!-- Box C: Matsuzakaya & PARCO & Horaiken (South Sakae) -->
+  <rect x="875" y="385" width="174" height="165" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="3"/>
+  <text x="887" y="410" class="p-name" fill="#B45309">【榮南側】松坂屋＆PARCO</text>
+  <text x="887" y="432" class="p-desc" font-weight="bold" fill="#B91C1C">🍱 松坂屋南館 10 樓：</text>
+  <text x="887" y="452" class="p-name" fill="#B91C1C">熱田蓬萊軒</text>
+  <text x="887" y="476" class="p-desc" fill="#047857" font-weight="bold">👵 免罰站黃金秘訣：</text>
+  <text x="887" y="496" class="p-desc">下午逛到松坂屋時先搭電梯</text>
+  <text x="887" y="516" class="p-desc">上10F登記候位領時間單，</text>
+  <text x="887" y="536" class="p-desc">18:00再上樓吃鰻魚三吃！</text>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：大須商圈「西邊大須觀音搭電梯 ➔ 往東逛拱廊吃Konparu ➔ 東邊上前津站搭車」；下午逛松坂屋先上南館10F登記蓬萊軒！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -3566,19 +4310,156 @@
 </tbody></table></div>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 6 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（新幹線返大阪 ➔ 難波黑門市場往南沿「堺筋」一直線走回新世界）</strong>：上午搭乘東海道新幹線由名古屋往西返回大阪，於新今宮站旁的「大阪新今宮知鄉標準酒店」寄放行李。中午從南海新今宮站搭 1 站（3 分鐘）往北至「南海難波站」走進「黑門市場」；下午離開黑門市場南門後，<strong>完全不用再轉地鐵，直接順著南北向主幹道「堺筋」一路往南平坦散步</strong>，依序逛過「日本橋電器街（Den Den Town）」➔ 直達南端「新世界 Maruhan 柏青哥」與「鶴橋男串」晚餐，最後散步回飯店！</li>
-<li><strong>🚶 黑門市場 ➔ 日本橋 ➔ 新世界「由北往南一條龍」動線</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>北段（黑門市場）</strong>：位於千日前通南側，十字型室內拱廊（中段旅遊資訊中心內設有免費冷暖氣室內座位休息區與無障礙洗手間，買好烤扇貝與和牛可帶長輩坐著吃）。</li>
-<li><strong>中段（日本橋電器街）</strong>：從黑門市場南側走出即接上「堺筋大道」，兩側騎樓平坦寬敞，一路往南逛 Joshin 電電城（鐵道模型館）與免稅藥妝。</li>
-<li><strong>南段（新世界・新今宮）</strong>：堺筋走到底即進入惠美須町與新世界「Maruhan 新世界店」及晚餐串燒店，離知鄉標準酒店僅數百公尺。</li>
-</ol>
-<ul class="handbook-list">
-<li><strong>👵 長輩隨時回房休息彈性優勢</strong>：若下午逛日本橋電器街時長輩覺得腿痠，可隨時在「日本橋站」搭地鐵堺筋線往南 <strong>1 站（2 分鐘）</strong> 到「惠美須町站」或「動物園前站」，先回飯店休息再出來吃晚餐！</li>
-</ul>
+<h5  class="day-map-guide-heading">🧭 Day 6 當日行程地圖解說（黑門市場 ➔ 日本橋電器街 ➔ 新世界「堺筋南北一條龍」地圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-6">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 6 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://maps.app.goo.gl/4zhVYiFzRmeWQJ2bA" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航1：名古屋➔新幹線➔大阪新今宮知鄉酒店</a><a href="https://maps.app.goo.gl/ZVYM9Y3wpHhTUE6B8" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航2：新今宮站➔黑門市場</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-6', 'Day 6 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-6" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#FEF2F2" stroke="#DC2626" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#991B1B"/>
+  <text x="38" y="47" class="m-title">🧭 Day 6 (1/4) 重返大阪・黑門市場 ➔ 日本橋電器街 ➔ 新世界「堺筋南北一條龍」地圖</text>
+  <text x="38" y="71" class="m-sub">【由北往南順著堺筋平地散步直通】① 知鄉標準酒店寄行李 ➔ ② 難波・黑門市場 ➔ ③ 沿堺筋往南逛日本橋電器街 ➔ ④ 新世界柏青哥＆鶴橋男串</text>
+
+  <!-- LEFT PANEL: Morning Shinkansen Return & Hotel Luggage Drop -->
+  <rect x="20" y="98" width="335" height="485" rx="14" fill="#FFF1F2" stroke="#FB7185" stroke-width="2"/>
+  <text x="36" y="128" class="z-title" fill="#9F1239">🚅 上午：名古屋返大阪寄行李</text>
+
+  <rect x="38" y="148" width="298" height="82" rx="10" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="52" y="172" class="p-name" fill="#0369A1">09:30 名古屋 ➔ 新大阪 ➔ 動物園前</text>
+  <text x="52" y="194" class="p-desc">東海道新幹線 Nozomi 239 (50分抵新大阪)</text>
+  <text x="52" y="213" class="p-desc">轉御堂筋線直達「動物園前站(M22)」</text>
+
+  <line x1="187" y1="230" x2="187" y2="270" stroke="#0284C7" stroke-width="5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Node 1: Chisun Standard Hotel -->
+  <rect x="38" y="275" width="298" height="125" rx="10" fill="#FFFFFF" stroke="#059669" stroke-width="3"/>
+  <circle cx="58" cy="298" r="14" fill="#059669"/><text x="58" y="298" class="step-num">1</text>
+  <text x="78" y="303" class="p-name">大阪新今宮知鄉標準酒店</text>
+  <text x="52" y="326" class="p-desc">12:00 於 1 樓櫃檯寄放全部大行李</text>
+  <text x="52" y="348" class="p-desc" fill="#047857" font-weight="bold">📍 絕佳位置：大門過馬路僅 140 公尺</text>
+  <text x="52" y="368" class="p-desc" fill="#047857" font-weight="bold">就是「南海新今宮站（西出口電梯）」！</text>
+  <text x="52" y="388" class="p-desc">（明天早上去關西機場就在正對面！）</text>
+
+  <line x1="187" y1="400" x2="187" y2="445" stroke="#059669" stroke-width="5" marker-end="url(#arrow-green)"/>
+
+  <rect x="38" y="450" width="298" height="112" rx="10" fill="#FFFBEB" stroke="#D97706" stroke-width="2.5"/>
+  <text x="52" y="476" class="p-name" fill="#B45309">🚃 12:30 南海新今宮 ➔ 南海難波</text>
+  <text x="52" y="498" class="p-desc">搭南海電車往北僅 <strong>1 站（3分鐘・¥180）</strong></text>
+  <text x="52" y="518" class="p-desc">抵達北端起點「南海難波站」，</text>
+  <text x="52" y="538" class="p-desc" font-weight="bold" fill="#B91C1C">接著下午就由北往南一路順向散步回新今宮！</text>
+
+  <!-- RIGHT PANEL: North-to-South "Sakaisuji Avenue" One-Line Map -->
+  <rect x="370" y="98" width="710" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="390" y="128" class="z-title" fill="#0F172A">🗺️ 下午＆晚間：「黑門市場 ➔ 日本橋電器街 ➔ 新世界」由北往南一條龍地圖</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(1030,148)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Sakaisuji Avenue Vertical Road Spine -->
+  <rect x="525" y="145" width="64" height="422" fill="#E2E8F0" stroke="#64748B" stroke-width="2"/>
+  <text x="562" y="395" class="road-lbl" transform="rotate(-90,562,395)">🛣️ 堺筋大道 (Sakaisuji Ave. 平坦寬敞騎樓・地下即堺筋線)</text>
+
+  <!-- NORTH ZONE: Node 2 Kuromon Market (13:00-14:30) -->
+  <rect x="615" y="145" width="375" height="128" rx="12" fill="#FFFBEB" stroke="#D97706" stroke-width="3"/>
+  <circle cx="637" cy="168" r="14" fill="#D97706"/><text x="637" y="168" class="step-num">2</text>
+  <text x="658" y="173" class="p-name">【北段 13:00–14:30】黑門市場（浪速的廚房）</text>
+  <text x="628" y="196" class="p-desc">🦀 三大名店：<strong>魚福</strong>(奶油烤大扇貝剪小塊)・<strong>西川鮮魚店</strong>(烤松葉蟹/海膽)・</text>
+  <text x="628" y="216" class="p-desc">🥩 <strong>萬野總本店</strong>(A5黑毛和牛薄片/馬鈴薯和牛可樂餅)</text>
+  <text x="628" y="238" class="p-desc" fill="#047857" font-weight="bold">👵 長輩貼心設施：市場中段「旅遊資訊中心」設有免費冷暖氣室內座位</text>
+  <text x="628" y="258" class="p-desc" fill="#047857" font-weight="bold">休息區與無障礙洗手間，買好烤扇貝與和牛可帶長輩坐著舒服享用！</text>
+
+  <!-- Nankai Namba West of Kuromon -->
+  <rect x="388" y="160" width="122" height="82" rx="8" fill="#F8FAFC" stroke="#64748B" stroke-width="2"/>
+  <text x="398" y="185" class="p-name" font-size="15">南海難波站</text>
+  <text x="398" y="205" class="p-desc">往東平地走</text>
+  <text x="398" y="223" class="p-desc">450m入黑門</text>
+  <line x1="510" y1="200" x2="610" y2="200" stroke="#D97706" stroke-width="4" marker-end="url(#arrow-orange)"/>
+
+  <!-- Walk South Arrow along Sakaisuji -->
+  <path d="M 557 235 L 557 325" fill="none" stroke="#DC2626" stroke-width="6" marker-end="url(#arrow-red)"/>
+
+  <!-- MIDDLE ZONE: Node 3 Nipponbashi Den Den Town (14:30-17:00) -->
+  <rect x="615" y="290" width="445" height="122" rx="12" fill="#EFF6FF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="637" cy="313" r="14" fill="#0284C7"/><text x="637" y="313" class="step-num">3</text>
+  <text x="658" y="318" class="p-name">【中段 14:30–17:00】大阪日本橋電器街（でんでんタウン）</text>
+  <text x="628" y="341" class="p-desc">🤖 從黑門市場南門走出即接上「堺筋大道」，一路往南平坦散步免轉車！</text>
+  <text x="628" y="362" class="p-desc">• <strong>Joshin 電電城 ＆ SUPER KIDS LAND 本店</strong>（鐵道模型館・鋼彈・免稅家電藥妝）</text>
+  <text x="628" y="384" class="p-desc" fill="#0369A1" font-weight="bold">💡 長輩省力備案：若長輩走累了，隨時可從「日本橋站(K17)」搭堺筋線往南</text>
+  <text x="628" y="402" class="p-desc" fill="#0369A1" font-weight="bold">坐 1 站（2分鐘）到「惠美須町站(K18)」先回知鄉酒店躺著休息！</text>
+
+  <!-- Walk South Arrow to Shinsekai -->
+  <path d="M 557 380 L 557 475" fill="none" stroke="#DC2626" stroke-width="6" marker-end="url(#arrow-red)"/>
+
+  <!-- SOUTH ZONE: Node 4 & 5 Shinsekai Maruhan & Tsuruhashi Otokogushi & Hotel -->
+  <rect x="615" y="428" width="445" height="138" rx="12" fill="#FEF2F2" stroke="#E11D48" stroke-width="3"/>
+  <circle cx="637" cy="452" r="14" fill="#E11D48"/><text x="637" y="452" class="step-num">4</text>
+  <text x="658" y="457" class="p-name">【南段 17:00–21:00】新世界 Maruhan 柏青哥 ＆ 鶴橋男串晚餐</text>
+  <text x="628" y="481" class="p-desc">🎰 <strong>17:00 Maruhan 新世界店</strong>：堺筋往南走到底即達！全面室內禁菸無菸味、設軟墊椅</text>
+  <text x="628" y="502" class="p-desc">與豪華沙發休息區（可體驗 1 日圓柏青哥）。</text>
+  <text x="628" y="524" class="p-desc" fill="#B91C1C" font-weight="bold">🍢 19:00 晚餐：串燒屋台 鶴橋男串（手工軟嫩雞肉丸串・高湯關東煮白蘿蔔・雞肉雜炊粥）</text>
+  <text x="628" y="546" class="p-desc" fill="#047857" font-weight="bold">🏨 用完餐平地散步數百公尺即回「大阪新今宮知鄉標準酒店」領房卡休息！</text>
+
+  <!-- Hotel Box on South-West of Sakaisuji -->
+  <rect x="385" y="465" width="128" height="95" rx="8" fill="#ECFDF5" stroke="#059669" stroke-width="2.5"/>
+  <text x="395" y="490" class="p-name" font-size="14" fill="#065F46">🏨 知鄉標準酒店</text>
+  <text x="395" y="512" class="p-desc">新今宮站對面</text>
+  <text x="395" y="532" class="p-desc" fill="#047857" font-weight="bold">晚餐後走回飯店</text>
+  <line x1="615" y1="515" x2="518" y2="515" stroke="#059669" stroke-width="4" marker-end="url(#arrow-green)"/>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：Day 6 下午只要記住「順著堺筋大道由北往南走」：北段黑門市場 ➔ 中段日本橋電器街 ➔ 南段新世界柏青哥＆飯店，完全不迷路！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <div class="keep-together-block day-intro-block">
@@ -3712,15 +4593,160 @@
 </ul>
 </div><!-- /.keep-together-block -->
 <div class="keep-together-block day-map-guide-box">
-<h5  class="day-map-guide-heading">🧭 Day 7 當日行程地圖解說（地理方位・動線總覽・長輩省力秘訣）</h5>
-<ul class="handbook-list">
-<li><strong>🗺️ 整體地理方位（飯店大門過馬路 140 公尺直上南海新今宮站 ➔ 直達關西機場 T1）</strong>：最後一天上午的回程動線是整趟旅程最省力的一段！前晚下榻的「大阪新今宮知鄉標準酒店」大門正對著「南海新今宮站」，退房後推著滿載伴手禮的大行李箱，<strong>往北過一條馬路僅 140 公尺（平地步行 3～4 分鐘）</strong>即抵達「南海新今宮站西出口」，一班車往西南直達關西國際機場第一航廈！</li>
-<li><strong>🚶 關西機場車站 ➔ 第一航廈（T1）出境大廳立體動線</strong>：</li>
-</ul>
-<ol class="handbook-list handbook-ol">
-<li><strong>南海新今宮站進站</strong>：請由「<strong>西出口（West Exit）</strong>」搭乘大型無障礙電梯上至 2 樓改札口刷卡進站，再搭電梯上 <strong>1 號月台</strong>（往關西機場方向）。</li>
-<li><strong>關西機場站出站 ➔ T1 4樓星宇櫃檯</strong>：於關西機場站下車後搭電梯上 2 樓出改札口，往左走過平坦的「2 樓室內連通空橋」進入<strong>第一航廈（Terminal 1）</strong>，搭乘大型手推車專用電梯直上 <strong>4 樓國際線出境大廳</strong>辦理星宇航空 <code class="inline-code">JX821</code> 報到託運，全程 100% 零階梯、從容返家！</li>
-</ol>
+<h5  class="day-map-guide-heading">🧭 Day 7 當日行程地圖解說（知鄉標準酒店 140m 直上南海新今宮站 ＆ 關西機場 T1 立體動線圖）</h5>
+
+            <div class="svg-map-container geo-map-container" id="geo-map-container-day-7">
+              <div class="svg-map-toolbar geo-map-toolbar">
+                <span class="svg-map-title">🧭 Day 7 當日行程地理方位與街區散步解說圖（上北下南左西右東・視覺化地理動線圖）</span>
+                <div class="svg-toolbar-actions">
+                  <a href="https://www.google.com/maps/dir/?api=1&origin=CHISUN+STANDARD+Osaka+Shin-Imamiya&destination=Kansai+International+Airport&travelmode=transit" target="_blank" rel="noopener noreferrer" class="btn-gmaps">🗺️ 📍 導航：大阪新今宮知鄉酒店➔南海新今宮➔關西國際機場</a>
+                  <button type="button" class="btn-action no-print" onclick="openSvgModal('svg-geo-day-7', 'Day 7 當日行程地理方位與街區散步解說圖')">🔍 放大檢視今日地理地圖</button>
+                </div>
+              </div>
+              <div class="svg-canvas-wrapper geo-canvas-wrapper">
+                <svg id="svg-geo-day-7" class="route-svg geo-map-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="100%" height="100%">
+
+  <defs>
+    <style>
+      .m-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+      .m-sub { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; fill: #E0F2FE; }
+      .z-title { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 18px; font-weight: bold; }
+      .p-name { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 16.5px; font-weight: bold; fill: #0F172A; }
+      .p-desc { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; fill: #334155; }
+      .p-tag { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #FFFFFF; }
+      .step-num { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 17px; font-weight: 900; fill: #FFFFFF; text-anchor: middle; dominant-baseline: central; }
+      .compass-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14px; font-weight: bold; fill: #1E3A8A; text-anchor: middle; }
+      .road-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13px; font-weight: bold; fill: #475569; }
+      .river-lbl { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 13.5px; font-weight: bold; fill: #0369A1; }
+      .tip-box-t { font-family: "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", sans-serif; font-size: 14.5px; font-weight: bold; fill: #065F46; }
+    </style>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#DC2626" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#0284C7" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D97706" />
+    </marker>
+  </defs>
+
+  <rect width="1100" height="660" rx="16" fill="#F0F9FF" stroke="#0284C7" stroke-width="2.5"/>
+
+  <!-- Header -->
+  <rect x="18" y="16" width="1064" height="68" rx="12" fill="#0369A1"/>
+  <text x="38" y="47" class="m-title">🧭 Day 7 (1/5) 知鄉標準酒店 140 公尺直上南海新今宮站 ＆ 關西機場 T1 出境立體地圖</text>
+  <text x="38" y="71" class="m-sub">【全行程最短零階梯返程動線】① 飯店大門過馬路140m進南海新今宮西口電梯 ➔ ② 南海特急Rapi:t直達關西機場 ➔ ③ 2F空橋直通T1 4F星宇櫃檯</text>
+
+  <!-- LEFT PANEL: 140m Hotel-to-Station Street Map -->
+  <rect x="20" y="98" width="495" height="485" rx="14" fill="#FFFFFF" stroke="#38BDF8" stroke-width="2"/>
+  <text x="38" y="128" class="z-title" fill="#0369A1">🗺️ 08:00 退房：飯店過馬路 140m 進站放大圖</text>
+  
+    <!-- Compass Rose (North Up) -->
+    <g transform="translate(462,148)">
+      <circle cx="0" cy="0" r="32" fill="#FFFFFF" stroke="#0284C7" stroke-width="2.5"/>
+      <polygon points="0,-24 -8,0 0,-5 8,0" fill="#DC2626"/>
+      <polygon points="0,20 -7,0 0,4 7,0" fill="#94A3B8"/>
+      <text x="0" y="-36" class="compass-t" fill="#DC2626">北 (N)</text>
+      <text x="0" y="47" class="compass-t">南 (S)</text>
+      <text x="-46" y="5" class="compass-t">西</text>
+      <text x="46" y="5" class="compass-t">東</text>
+    </g>
+    
+
+  <!-- Nankai Shin-Imamiya Station (North Side of Street) -->
+  <rect x="42" y="155" width="380" height="150" rx="12" fill="#EFF6FF" stroke="#0284C7" stroke-width="3"/>
+  <circle cx="64" cy="180" r="14" fill="#0284C7"/><text x="64" y="180" class="step-num">2</text>
+  <text x="86" y="185" class="p-name">南海電鐵「新今宮站 (NK03)」(北側)</text>
+  <text x="56" y="210" class="p-desc" fill="#047857" font-weight="bold">🛗 請進「西出口 (West Exit)」搭大型無障礙電梯直上！</text>
+  <text x="56" y="232" class="p-desc">• 2F 改札口刷卡進站 ➔ 再搭電梯上 <strong>1 號月台 (往關西機場)</strong></text>
+  <text x="56" y="256" class="p-desc" fill="#B91C1C" font-weight="bold">🚆 班次 A：08:32 特急 Rapi:t ➔ 09:07 抵關西機場 (35分・設大行李架)</text>
+  <text x="56" y="278" class="p-desc" fill="#0369A1" font-weight="bold">🚆 班次 B：08:05 機場急行 ➔ 08:49 抵關西機場 (43分・刷IC卡¥970)</text>
+
+  <!-- Crosswalk & Road (140m only!) -->
+  <rect x="42" y="325" width="445" height="58" rx="6" fill="#E2E8F0" stroke="#94A3B8" stroke-width="1.5"/>
+  <!-- Zebra Crossing Stripes -->
+  <rect x="185" y="328" width="70" height="10" fill="#FFFFFF"/>
+  <rect x="185" y="343" width="70" height="10" fill="#FFFFFF"/>
+  <rect x="185" y="358" width="70" height="10" fill="#FFFFFF"/>
+  <rect x="185" y="371" width="70" height="8" fill="#FFFFFF"/>
+  <text x="270" y="360" class="p-name" fill="#B91C1C">🚶 平地過斑馬線僅 140 公尺 (3~4分鐘)</text>
+
+  <!-- Arrow from Hotel North across Zebra Crossing -->
+  <line x1="220" y1="415" x2="220" y2="310" stroke="#059669" stroke-width="7" marker-end="url(#arrow-green)"/>
+
+  <!-- Hotel Chisun Standard (South Side of Street) -->
+  <rect x="42" y="415" width="445" height="145" rx="12" fill="#ECFDF5" stroke="#059669" stroke-width="3"/>
+  <circle cx="64" cy="440" r="14" fill="#059669"/><text x="64" y="440" class="step-num">1</text>
+  <text x="86" y="445" class="p-name">大阪新今宮知鄉標準酒店 (南側)</text>
+  <text x="56" y="470" class="p-desc">⏰ <strong>08:00 1樓退房</strong>（檢查護照、手機、房卡歸還）</text>
+  <text x="56" y="494" class="p-desc" fill="#B91C1C" font-weight="bold">🔋 行李最後檢查：行動電源、備用鋰電池「嚴禁託運」請放隨身包！</text>
+  <text x="56" y="516" class="p-desc">🍶 布丁、果凍、清酒、味噌醬、超過100ml乳液藥水「一律塞進託運行李箱」！</text>
+  <text x="56" y="538" class="p-desc" fill="#047857" font-weight="bold">★推大行李箱出飯店大門往北過一條馬路就到車站電梯，長輩輕鬆無比！</text>
+
+  <!-- RIGHT PANEL: Kansai Airport (KIX) 3D Cross-Section Terminal 1 Map -->
+  <rect x="530" y="98" width="550" height="485" rx="14" fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"/>
+  <text x="550" y="128" class="z-title" fill="#1E3A8A">✈️ 09:07 抵達：關西國際機場第一航廈 (KIX T1) 立體動線圖</text>
+
+  <!-- KIX Railway Station Building (Left Box in Right Panel) -->
+  <rect x="550" y="265" width="175" height="275" rx="10" fill="#EFF6FF" stroke="#0284C7" stroke-width="2.5"/>
+  <text x="565" y="292" class="p-name" fill="#0369A1">【關西機場車站】</text>
+
+  <rect x="565" y="315" width="145" height="82" rx="8" fill="#FFFFFF" stroke="#0284C7" stroke-width="2"/>
+  <text x="577" y="340" class="p-name" font-size="15">2F 車站改札口</text>
+  <text x="577" y="362" class="p-desc">出改札口往左轉</text>
+  <text x="577" y="380" class="p-desc" fill="#047857" font-weight="bold">直通 T1 連通空橋</text>
+
+  <rect x="565" y="435" width="145" height="82" rx="8" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+  <text x="577" y="460" class="p-name" font-size="15">1F 鐵道月台層</text>
+  <text x="577" y="482" class="p-desc">09:07 下車後</text>
+  <text x="577" y="500" class="p-desc" fill="#047857" font-weight="bold">🛗 搭月台電梯上2F</text>
+
+  <line x1="637" y1="435" x2="637" y2="402" stroke="#0284C7" stroke-width="5" marker-end="url(#arrow-blue)"/>
+
+  <!-- 2F Skybridge Connecting Station to T1 -->
+  <rect x="725" y="332" width="75" height="44" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="732" y="352" class="p-desc" font-weight="bold" fill="#92400E">2F 空橋</text>
+  <text x="732" y="368" class="p-desc" font-size="12">(平坦連通)</text>
+  <line x1="710" y1="354" x2="795" y2="354" stroke="#D97706" stroke-width="5" marker-end="url(#arrow-orange)"/>
+
+  <!-- KIX Terminal 1 Building (Right Box in Right Panel: 4F, 3F, 2F) -->
+  <rect x="800" y="148" width="262" height="392" rx="12" fill="#FFFBEB" stroke="#D97706" stroke-width="3"/>
+  <circle cx="822" cy="172" r="14" fill="#D97706"/><text x="822" y="172" class="step-num">3</text>
+  <text x="844" y="177" class="p-name" fill="#92400E">第一航廈 (Terminal 1)</text>
+
+  <!-- 4F International Departure Hall -->
+  <rect x="815" y="198" width="232" height="118" rx="8" fill="#FFFFFF" stroke="#DC2626" stroke-width="2.5"/>
+  <text x="827" y="222" class="p-name" fill="#B91C1C">🛫 4F 國際線出境大廳</text>
+  <text x="827" y="244" class="p-desc" font-weight="bold">• 星宇航空 JX821 報到託運</text>
+  <text x="827" y="264" class="p-desc">（09:20開櫃／11:20關櫃）</text>
+  <text x="827" y="284" class="p-desc">• 出境隨身安檢 ＆ 護照查驗</text>
+  <text x="827" y="304" class="p-desc" fill="#047857" font-weight="bold">• 全新大型免稅店＆候機室休息</text>
+
+  <!-- 3F Restaurants & Shops / Boarding Gates -->
+  <rect x="815" y="330" width="232" height="92" rx="8" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <text x="827" y="354" class="p-name" fill="#065F46">🛍️ 2F/3F 連通層＆餐飲伴手禮</text>
+  <text x="827" y="376" class="p-desc">由空橋進入 T1 2F 後，直接搭乘</text>
+  <text x="827" y="396" class="p-desc" fill="#047857" font-weight="bold">🛗「大型手推車電梯」直上 4F！</text>
+
+  <line x1="930" y1="330" x2="930" y2="318" stroke="#DC2626" stroke-width="5" marker-end="url(#arrow-red)"/>
+
+  <!-- Flight Info Footer inside T1 -->
+  <rect x="815" y="436" width="232" height="88" rx="8" fill="#1E3A8A"/>
+  <text x="827" y="460" class="p-tag" fill="#FEF08A">✈️ 星宇 JX821 (A330-900neo)</text>
+  <text x="827" y="482" class="p-tag">11:40 登機｜12:20 起飛</text>
+  <text x="827" y="504" class="p-tag" fill="#A7F3D0">14:35 平安返抵桃園機場 T1 🏠</text>
+
+  <!-- Bottom Tip -->
+  <rect x="20" y="596" width="1060" height="48" rx="10" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="38" y="626" class="tip-box-t">👵 長輩省力口訣：退房過馬路 140 公尺搭電梯上南海新今宮站 ➔ 關西機場站搭電梯上 2F 過空橋 ➔ 搭大電梯直上 T1 4F 星宇櫃檯，全程零階梯！</text>
+</svg>
+              </div>
+            </div>
+            
 </div><!-- /.keep-together-block -->
 <hr class="section-divider" />
 <hr class="section-divider" />
